@@ -1,7 +1,7 @@
 import sys
 import random
 
-with open('words.txt', 'r') as words:
+with open('words.txt', 'r',encoding="utf-8") as words:
     text = words.readlines()
     k = int(sys.argv[1])
     pswrdlist = random.sample(text, k)

@@ -1,5 +1,5 @@
 with open('dict.txt', 'r') as infile:
-    with open('en_full.txt', 'w') as outfile:
+    with open('words.txt', 'w') as outfile:
         for lines in infile:
             text = lines.partition(' ')[0]
             if len(text) > 3:
